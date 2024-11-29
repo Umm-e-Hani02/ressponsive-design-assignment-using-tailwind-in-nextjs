@@ -5,7 +5,7 @@ export default function Navbar(){
     
     const [isClick, setisClick] = useState(false)
     
-    const toggleNavbar = ():void =>{
+    const toggleNavbar = ()=>{
         setisClick(!isClick)
     }
 
@@ -28,7 +28,7 @@ export default function Navbar(){
                         </div>
                     </div>
                     <div className="md:hidden flex items-center">
-                        <button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onClick={toggleNavbar}
+                        <button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white" onClick={toggleNavbar}
                         >
                             {isClick ? (
                                 <svg className="h-6 w-6"
